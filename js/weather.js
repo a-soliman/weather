@@ -21,7 +21,19 @@ class Weather {
             .catch(err => err);
     }
 
-    
+    getWeather() {
+        return this.getCityId()
+            .then((city_id) => {
+                if( city_id ) {
+                    return fetch(`http://api.openweathermap.org/data/2.5/forecast?id=${city_id}&APPID=${this.api_key}`)
+                        .then((response) => response.json())
+                        .then((data) => {
+                            return data;
+                        })
+                        .catch((err) => err);
+                }
+            });
+    }
     
 }
 
