@@ -6,10 +6,11 @@ class UI {
     }
 
     clearInputs() {
-        console.log('clearing inputs');
+        document.getElementById('city').value = '';
+        document.getElementById('country').value = '';
     }
 
     closeModal() {
-        console.log('closing modal');
+        
     }
 }
