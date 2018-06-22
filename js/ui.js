@@ -11,6 +11,6 @@ class UI {
     }
 
     closeModal() {
-        
+        document.getElementById('closeModal').click();
     }
 }
