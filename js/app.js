@@ -18,12 +18,10 @@ document.querySelector('#w-change-btn').addEventListener('click', (e) => {
             }
             else {
                 ui.showWeather(data);
+                ui.clearInputs();
+                ui.closeModal();
             }
         });
     
-    // CLEAR THE INPUT FORM
-    ui.clearInputs();
-
-    // CLOSE THE MODAL
-    ui.closeModal();
+    
 });
