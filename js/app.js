@@ -21,5 +21,9 @@ document.querySelector('#w-change-btn').addEventListener('click', (e) => {
             }
         });
     
-    
+    // CLEAR THE INPUT FORM
+    ui.clearInputs();
+
+    // CLOSE THE MODAL
+    ui.closeModal();
 });
