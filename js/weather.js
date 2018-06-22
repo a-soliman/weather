@@ -5,6 +5,22 @@ class Weather {
         this.country = country;
     }
 
+    getCityId() {
+        return fetch('/city.list.json')
+            .then((response) => response.json())
+            .then((data) => {
+                let city = data.filter((city) => {
+                    return city.name.toLowerCase() == this.city.toLowerCase() && city.country.toLowerCase() == this.country.toLowerCase();
+                })[0];
+                
+                if (city) {
+                    return city.id;
+                }
+                return false;
+            })
+            .catch(err => err);
+    }
+
     
     
 }
