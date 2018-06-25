@@ -24,11 +24,11 @@ class UI {
 
         locationContainer.innerText     = location;
         descriptionContainer.innerText  = description;
-        tempContainer.innerText         = temp;
-        humidityContainer.innerText     = humidity;
-        maxContainer.innerText          = max;
-        minContainer.innerText          = min;
-        windSpeedContainer.innerText    = windSpeed;
+        tempContainer.innerText         = 'Temprature: ' + temp;
+        humidityContainer.innerText     = 'Humidity: ' +humidity;
+        maxContainer.innerText          = 'Max: ' + max;
+        minContainer.innerText          = 'Min: ' + min;
+        windSpeedContainer.innerText    = 'Wind Speed: ' + windSpeed;
         
 
 

@@ -34,6 +34,11 @@ class Weather {
                 }
             });
     }
+
+    changeCity(city, country) {
+        this.city = city;
+        this.country = country;
+    }
     
 }
 
